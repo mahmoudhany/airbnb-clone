@@ -1,0 +1,29 @@
+.city {
+  display: flex;
+  align-items: center;
+  flex: 0 0 300px;
+  column-gap: 16px;
+
+  .thumbnail {
+    height: 64px;
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+      height: 100%;
+    }
+  }
+  .description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    p {
+      margin: 0;
+      font-size: $s-size;
+      font-weight: 300;
+      &:first-child {
+        font-weight: 600;
+      }
+    }
+  }
+}

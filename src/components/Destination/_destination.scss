@@ -1,0 +1,15 @@
+.destination-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 0;
+}
+.destination-state--city {
+  line-height: 1.125rem;
+}
+
+.destination-state--state {
+  color: $light-font;
+  padding-top: 2px;
+}

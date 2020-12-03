@@ -1,0 +1,134 @@
+.sticky-top {
+  background-color: #fff;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+
+  & > div {
+    padding: $s-size 0;
+  }
+}
+
+.logo {
+  a {
+    display: block;
+    height: 32px;
+  }
+  img {
+    height: 100%;
+  }
+}
+.custom-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: 0 !important;
+}
+
+.search {
+  button {
+    @extend .custom-btn;
+    width: 300px;
+    padding: 7px 5px;
+    border: 1px solid $light-border;
+    border-radius: 1.5rem;
+    .search-input {
+      padding: 0 $s-size;
+      font-weight: 500;
+    }
+    .search-icon {
+      color: white;
+      padding: 8px 9px;
+      background: $main-red;
+      border-radius: 16px;
+    }
+  }
+}
+
+.right nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-weight: 500;
+    color: $main-black;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.nav__btn {
+  @extend .custom-btn;
+  padding: $xss-size;
+  border-radius: 1.25rem;
+
+  div:first-child {
+    margin-right: 6px;
+  }
+  &--profile {
+    border: 1px solid $light-border;
+    border-radius: 1.25rem;
+    padding: 5px 5px 5px 12px;
+    margin-left: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    > div:last-child {
+      padding-left: 9px;
+      height: 30px;
+    }
+    &:hover {
+      box-shadow: 0 6px 10px $light-border;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+  }
+
+  &:hover:not(&--profile) {
+    background-color: $light-bg;
+  }
+}
+
+.dropdown-menu {
+  border: 0;
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 8px 0px;
+  min-width: 240px;
+  line-height: 1.43;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 16px;
+
+  .dropdown-item:first-child {
+    font-weight: 400;
+  }
+
+  .dropdown-item {
+    font-weight: 300;
+  }
+}
+@media (max-width: 768px) {
+  .logo,
+  .right {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+  }
+  .search {
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
+}

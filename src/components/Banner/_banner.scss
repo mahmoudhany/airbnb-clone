@@ -1,0 +1,42 @@
+.cover-wrapper {
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  > div {
+    margin-left: 5%;
+  }
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: transparent;
+
+  h1 {
+    color: #fff;
+    font-size: 6.75rem;
+    font-weight: 900;
+    line-height: 0.9;
+    padding: 0;
+    margin-bottom: 22px;
+    max-width: 390px;
+  }
+  a {
+    display: block;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-weight: 400;
+    &:hover {
+      border-color: $main-black;
+      background: $light-bg;
+    }
+  }
+}

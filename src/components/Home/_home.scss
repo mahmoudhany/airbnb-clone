@@ -1,0 +1,36 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 24%;
+  row-gap: 8px;
+
+  .image {
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .info {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home {
+    flex: 1 0 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex: 1 0 35%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home {
+    flex: 1 0 45%;
+  }
+}

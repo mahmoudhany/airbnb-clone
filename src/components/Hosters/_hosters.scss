@@ -1,0 +1,13 @@
+.hosters {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, minmax(250px, 1fr));
+    column-gap: 10px;
+    overflow-x: scroll;
+  }
+}
